@@ -2,4 +2,8 @@
 
 FIRST_NAME=$1
 LAST_NAME=$2
-echo "Hello, $FIRST_NAME $LAST_NAME"
+SHOW=$3
+if ["$SHOW"="true"]; then
+    echo "Hello, $FIRST_NAME $LAST_NAME"
+else
+    echo "If you want to see name, please choose the SHOW"
