@@ -10,7 +10,7 @@
   - [Table of Contents](#table-of-contents)
   - [Installing Jenkins(LTS)](#installing-jenkinslts)
     - [Unlocking Jenkins](#unlocking-jenkins)
-    - [Pipeline Syntax](#pipeline-syntax)
+    - [Pipeline](#pipeline)
 
 ## Installing Jenkins(LTS)
 
@@ -36,6 +36,14 @@ You can see more details [Installing Jenkins on Ubuntu/Debian](https://github.co
 1. Browse to http://localhost:8080
 2. The command: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` will print the password at console.
 
-### Pipeline Syntax
+### Pipeline
 
 The [Snippet Generator](http://localhost:8080/job/first-pipline/pipeline-syntax/) will help you learn the Pipeline Script code which can be used to define various steps.
+
+A Pipeline can be created in one of the following ways:
+
+- [Through Blue Ocean](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-blue-ocean) - after setting up a Pipeline project in Blue Ocean, the Blue Ocean UI helps you write your Pipeline’s Jenkinsfile and commit it to source control.
+
+- [Through the classic UI](https://www.jenkins.io/doc/book/pipeline/getting-started/#through-the-classic-ui) - you can enter a basic Pipeline directly in Jenkins through the classic UI.
+
+- [In SCM](https://www.jenkins.io/doc/book/pipeline/getting-started/#defining-a-pipeline-in-scm) - you can write a Jenkinsfile manually, which you can commit to your project’s source control repository.
