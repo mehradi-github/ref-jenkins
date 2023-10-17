@@ -1,8 +1,8 @@
 #!/bin/bash
 
-FIRST_NAME=$1
-LAST_NAME=$2
-SHOW=$3
+# FIRST_NAME=$1
+# LAST_NAME=$2
+# SHOW=$3
 
 if [ $SHOW == 1 ] 
 then
