@@ -10,6 +10,7 @@
   - [Table of Contents](#table-of-contents)
   - [Installing Jenkins(LTS)](#installing-jenkinslts)
     - [Unlocking Jenkins](#unlocking-jenkins)
+    - [Pipeline Syntax](#pipeline-syntax)
 
 ## Installing Jenkins(LTS)
 
@@ -34,3 +35,7 @@ You can see more details [Installing Jenkins on Ubuntu/Debian](https://github.co
 
 1. Browse to http://localhost:8080
 2. The command: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` will print the password at console.
+
+### Pipeline Syntax
+
+The [Snippet Generator](http://localhost:8080/job/first-pipline/pipeline-syntax/) will help you learn the Pipeline Script code which can be used to define various steps.
