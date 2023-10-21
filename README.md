@@ -10,6 +10,7 @@
   - [Table of Contents](#table-of-contents)
   - [Installing Jenkins(LTS)](#installing-jenkinslts)
     - [Unlocking Jenkins](#unlocking-jenkins)
+    - [Prepare Agent and Host](#prepare-agent-and-host)
     - [Pipeline](#pipeline)
 
 ## Installing Jenkins(LTS)
@@ -35,6 +36,21 @@ You can see more details [Installing Jenkins on Ubuntu/Debian](https://github.co
 
 1. Browse to http://localhost:8080
 2. The command: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` will print the password at console.
+
+### Prepare Agent and Host
+
+```sh
+# Prepare agent
+sudo apt install default-jre net-tools
+java version
+ifconfig -a
+git config --global http.proxy http://192.168.1.34:8889/
+
+# Prepare host
+sudo su -
+ssh-keyscan -H agent1 >> /var/lib/jenkins/.ssh/known_hosts
+chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+```
 
 ### Pipeline
 
